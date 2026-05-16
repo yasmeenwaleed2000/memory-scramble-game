@@ -94,6 +94,22 @@
   </style>
 </head>
 <body>
+  <h1>🧠 Memory Scramble Game</h1>
+
+  <div class="settings">
+    <input type="number" id="rows" placeholder="Rows" min="2" value="4" />
+    <input type="number" id="cols" placeholder="Columns" min="2" value="4" />
+    <input type="number" id="time" placeholder="Time (sec)" min="10" value="60" />
+    <button onclick="startGame()">Start Game</button>
+  </div>
+  <div class="info">
+    ⏰ Time Left: <span id="timer">60</span>s
+  </div>
+
+  <div id="gameBoard" class="game-board"></div>
+
+  <div id="message" class="message"></div>
+
     
 </body>
 </html>
