@@ -235,6 +235,16 @@
         [array[i], array[j]] = [array[j], array[i]];
       }
     }
+
+    function endGame(win) {
+      const message = document.getElementById('message');
+
+      if (win) {
+        message.textContent = '🎉 You Win!';
+      } else {
+        message.textContent = '⏰ Game Over!';
+      }
+    }
     
     </script>
     
