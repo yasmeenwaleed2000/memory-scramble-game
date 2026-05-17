@@ -203,6 +203,13 @@
         unflipCards();
       }
     }
+
+    function disableCards() {
+      firstCard.classList.add('matched');
+      secondCard.classList.add('matched');
+
+      resetBoard();
+    }
     </script>
     
 </head>
