@@ -187,6 +187,22 @@
 
       checkMatch();
     }
+
+    function checkMatch() {
+      const isMatch = firstCard.dataset.symbol === secondCard.dataset.symbol;
+
+      if (isMatch) {
+        disableCards();
+        matches++;
+
+        if (matches === totalPairs) {
+          clearInterval(timer);
+          endGame(true);
+        }
+      } else {
+        unflipCards();
+      }
+    }
     </script>
     
 </head>
