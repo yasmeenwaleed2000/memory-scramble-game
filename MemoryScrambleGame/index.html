@@ -215,6 +215,19 @@
       [firstCard, secondCard] = [null, null];
       lockBoard = false;
     }
+
+    function unflipCards() {
+      setTimeout(() => {
+        firstCard.classList.remove('flipped');
+        secondCard.classList.remove('flipped');
+
+        firstCard.innerHTML = '?';
+        secondCard.innerHTML = '?';
+
+        resetBoard();
+      }, 1000);
+    }
+    
     </script>
     
 </head>
